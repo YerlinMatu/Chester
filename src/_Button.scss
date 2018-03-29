@@ -1,0 +1,84 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.ch-btn,
+button,
+input[type='button'],
+input[type='submit'] {
+  background-color: $color-secondary;
+  width: 250px;
+  max-width: 280px;
+  height: 60px;
+  border: 1px $color-secondary;
+  color: $color-initial;
+  text-transform: uppercase;
+  font: 14px 'Roboto', arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: none;
+  box-shadow: none;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &:active, &:link, &:visited {
+    outline: none;
+  }
+  
+  &:disabled, &.is-disabled {
+    cursor: default;
+    color: $color-text-disabled;
+    background-color: $color-bg-disabled;
+  }
+  
+  &.is-big {
+    width: 340px;
+    font: 12pt;
+  }
+  
+  &.is-outline {
+    background-color: transparent;
+    border: solid 1.5pt $color-secondary;
+    color: $color-secondary;
+    
+    &:disabled {
+      background-color: transparent;
+      border: solid 1.5pt $color-text-disabled;
+      color: $color-text-disabled;
+    }
+    
+  }
+  
+  &.is-round {    
+    min-width: 165px;
+    max-width: 240x;
+    height: 50px;
+    background-color: transparent;
+    border: solid 1.5pt $color-tertiary;
+    border-radius: 50px;
+    color: $color-quaternary;
+  }
+  
+  &.is-clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-tertiary;
+  }
+  
+  &.is-money {
+    width: 30px;
+    height: 30px;
+    padding-left: inherit;
+    padding-right: inherit;
+    background-color: transparent;
+    border: solid 1.2pt $color-primary;
+    border-radius: 50%;
+    color: $color-primary;
+    text-align: center;
+  }
+}

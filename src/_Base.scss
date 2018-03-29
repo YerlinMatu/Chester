@@ -1,0 +1,24 @@
+/*!
+ * Chester v1.0.0
+ * Copyright (c) 2017 Yerlinson Maturana
+ * Twitter: @YerlinMatu
+ * Licensed under the MIT license
+ */
+
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+  color: $color-text;
+  font: 1.6em 'Roboto', arial, sans-serif; 
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}

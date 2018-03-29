@@ -1,0 +1,35 @@
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.ch-float-right {
+  float: right;
+}
+
+.ch-float-left {
+  float: left;
+}
+
+.ch-visible {
+  visibility: visible;
+}
+
+.ch-invisible {
+  visibility: hidden;
+}
+
+.effect {
+  &.is-gaussian {
+    filter: blur(5px);
+  }
+  
+  &.is-gaussian-10 {
+    filter: blur(10px);
+  }
+  
+  &.is-gap {
+    filter: grayscale(100%);
+  }
+  
+   &.is-sepia {
+    filter: sepia(100%);
+  } 
+}
